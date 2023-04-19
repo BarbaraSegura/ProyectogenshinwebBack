@@ -4,4 +4,4 @@ const characterRouter = require("./character.router.js")
 
 router.use("/character",characterRouter)
 
-module.exports = router;
+module.exports = router
