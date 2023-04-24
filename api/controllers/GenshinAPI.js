@@ -1,4 +1,5 @@
 const Character = require("../models/Character")
+const Weapon = require("../models/Weapon")
 
 function getCharacter(req, res) {
     Character
@@ -7,6 +8,14 @@ function getCharacter(req, res) {
         .catch(err => handleError(err, res))
 }
 
+function getWeapon(req, res) {
+    Weapon
+        .find(req.query)
+        .then(weapons => res.json(weapons))
+        .catch(err => handleError(err, res))
+}
+
 module.exports = {
     getCharacter,
+    getWeapon
 }
