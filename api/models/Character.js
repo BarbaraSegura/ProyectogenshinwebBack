@@ -7,7 +7,7 @@ const characterSchema = new mongoose.Schema({
   title: {
     type: String,
   },
-  image: {
+  imagen: {
     type: String,
   },
   vision: {
@@ -24,7 +24,10 @@ const characterSchema = new mongoose.Schema({
   },
   description: {
     type: String
-  }  
+  },
+  avatar: {
+    type: String
+  }    
 });
 
 const characterModel = mongoose.model("character", characterSchema);
