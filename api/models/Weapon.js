@@ -7,7 +7,10 @@ const weaponSchema = new mongoose.Schema({
     type: {
         type: String,
     },
-    image: {
+    imagen: {
+        type: String,
+    },
+    avatar: {
         type: String,
     },
     rarity: {
